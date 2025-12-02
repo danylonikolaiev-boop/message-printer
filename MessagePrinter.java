@@ -19,11 +19,15 @@ public class MessagePrinter {
     }
 
     
+    public static String getTimeMessage() {
+        return "Current time: " + java.time.LocalTime.now();
+    }
 
     
     public static void main(String[] args) {
         System.out.println(getWelcomeMessage());
         System.out.println(getDateMessage());
+        System.out.println(getTimeMessage());
         System.out.println(getAuthorMessage());
         System.out.println("Learning remote repositories!");
         System.out.println(getGoodbyeMessage());
